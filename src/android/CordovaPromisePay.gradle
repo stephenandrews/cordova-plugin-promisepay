@@ -1,0 +1,3 @@
+dependencies {
+    compile 'com.github.promisepay:promisepay:0.2.1'
+}

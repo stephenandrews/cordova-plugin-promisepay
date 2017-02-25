@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-promisepay" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-promisepay</name>
+    <js-module name="promisepay" src="www/CordovaPromisePay.js">
+        <clobbers target="cordova.plugins.promisepay" />
+    </js-module>
+
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CordovaPromisePay">
+                <param name="android-package" value="nz.appsy.cordova.promisepay.CordovaPromisePay" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/CordovaPromisePay.java" target-dir="src/nz/appsy/cordova/promisepay" />
+
+        <framework src="src/android/CordovaPromisePay.gradle" custom="true" type="gradleReference" />
+
+    </platform>
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="CordovaPromisePay">
+                <param name="ios-package" value="CordovaPromisePay" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CordovaPromisePay.h" />
+        <source-file src="src/ios/CordovaPromisePay.m" />
+
+        <framework src="src/ios/PromisePay.framework" custom="true" />
+
+    </platform>
+
+</plugin>

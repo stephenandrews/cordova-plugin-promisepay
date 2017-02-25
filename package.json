@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-promisepay",
+  "version": "1.0.0",
+  "description": "Cordova plugin that lets you use PromisePay's Native SDKs for Android and iOS",
+  "cordova": {
+    "id": "cordova-plugin-promisepay",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenandrews/cordova-plugin-promisepay.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "promisepay",
+    "phonegap",
+    "cordova-plugin"
+  ],
+  "author": "Stephen Andrews <stephen@appsy.nz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenandrews/cordova-plugin-promisepay/issues"
+  },
+  "homepage": "https://github.com/stephenandrews/cordova-plugin-promisepay#readme"
+}
